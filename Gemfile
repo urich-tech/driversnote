@@ -28,6 +28,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'image_processing', '~> 1.2'
 
 gem 'devise'
+gem 'rails_12factor', group: :production
 
 # gem 'paperclip'
 gem 'font-awesome-sass', '~> 5.13.0'
