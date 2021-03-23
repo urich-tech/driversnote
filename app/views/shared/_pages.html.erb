@@ -1,3 +1,8 @@
+<% if (current_user.subscription_seats == 0 ) || (current_user.subscription_seats == nil)%>
+
+ <div class="alert alert-danger" role="alert">Please upgrade to a paid subscription. You dont have subscription seats. </div>
+
+ <% end %>
 
 <!-- ############ PAGE START-->
 <div class="padding">
