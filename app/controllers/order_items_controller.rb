@@ -1,4 +1,5 @@
 class OrderItemsController < ApplicationController
+    before_action :set_order
 
 
     def create
@@ -35,4 +36,7 @@ class OrderItemsController < ApplicationController
         params.require(:order_item).permit(:product_id, :quantity)
     end
 
+    def set_order
+        @order = current_order
+    end
 end
